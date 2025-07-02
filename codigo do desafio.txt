@@ -1,10 +1,10 @@
-import java.util.Scanner; // Importa a classe Scanner para ler a entrada do usuário
+import java.util.Scanner; 
 
 public class ReajusteSalarial {
     public static void main() {
 
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Digite o salário atual do colaborador: R$ ");
+        System.out.print("Digite o salÃ¡rio atual do colaborador: R$ ");
         double salarioAtual = entrada.nextDouble(); 
         double percentualAumento = 0.0;
         double valorAumento = 0.0;
@@ -27,11 +27,11 @@ public class ReajusteSalarial {
         aumentoReal = (novoSalario / (1 + inflacao)) - salarioAtual;
 
         System.out.println("--- Resultado do Reajuste Salarial ---");
-        System.out.printf("1. Salário antes do reajuste: R$ %.2f\n", salarioAtual);
+        System.out.printf("1. SalÃ¡rio antes do reajuste: R$ %.2f\n", salarioAtual);
         System.out.printf("2. Percentual de aumento aplicado: %.0f%%\n", percentualAumento * 100);
         System.out.printf("3. Valor do aumento: R$ %.2f\n", valorAumento);
-        System.out.printf("4. Novo salário, após o aumento: R$ %.2f\n", novoSalario);
-        System.out.printf("5. Valor do aumento real (descontado a inflação de 3,8%%): R$ %.2f\n", aumentoReal);
+        System.out.printf("4. Novo salÃ¡rio, apÃ³s o aumento: R$ %.2f\n", novoSalario);
+        System.out.printf("5. Valor do aumento real (descontado a inflaÃ§Ã£o de 3,8%%): R$ %.2f\n", aumentoReal);
 
         entrada.close();
     }
